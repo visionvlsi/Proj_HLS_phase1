@@ -56,6 +56,8 @@ def ALU_combi(q, o, z, n, a, b, f, width=16):
             result.next = a ^ b
         elif f == t_ALU_FUNCTION.A_PLUS_B:
             result.next = a + b
+        else:
+            result.next=0
 
     @always_comb
     def alu_status():
