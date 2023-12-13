@@ -18,7 +18,7 @@ t_ALU_FUNCTION = enum(
     "A_XOR_B",
     )
 @block
-def ALU(q, o, z, n, a, b, f, clk, rst, width=16):
+def aluSeq(q, o, z, n, a, b, f, clk, rst, width=16):
     """
     Simple ALU.
     See ARM System Architecture "Introduction To Processor Design"
@@ -59,6 +59,8 @@ def ALU(q, o, z, n, a, b, f, clk, rst, width=16):
             result.next = a ^ b
         elif f == t_ALU_FUNCTION.A_PLUS_B:
             result.next = a + b
+        else:
+            result.next=0
 
     @always_comb
     def alu_status():
@@ -83,7 +85,7 @@ def convert(hdl):
     b = Signal(intbv(0)[16:])
     f = Signal(t_ALU_FUNCTION.ZERO)
     rst = ResetSignal(0, active=0, isasync=True)
-    convInst = ALU(q, o, z, n, a, b, f, clk, rst, width=16)
+    convInst = aluSeq(q, o, z, n, a, b, f, clk, rst, width=16)
     convInst.convert(hdl=hdl)
 convert(hdl='Verilog')
 """

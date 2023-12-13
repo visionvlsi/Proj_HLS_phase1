@@ -1,4 +1,4 @@
-module tb_ALU;
+module tb_aluSeq;
 
 wire [15:0] q;
 wire o;
@@ -26,7 +26,7 @@ initial begin
     );
 end
 
-ALU dut(
+aluSeq dut(
     q,
     o,
     z,
