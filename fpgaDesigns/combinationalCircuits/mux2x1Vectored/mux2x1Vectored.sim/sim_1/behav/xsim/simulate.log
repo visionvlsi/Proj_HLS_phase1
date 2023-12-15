@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+                   0ns a=36 b=129 sel=1 y=129
+                   5ns a=99 b=13 sel=1 y=13
+                  10ns a=101 b=18 sel=1 y=18
+                  15ns a=13 b=118 sel=1 y=118
+                  20ns a=237 b=140 sel=1 y=140
+                  25ns a=198 b=197 sel=0 y=198
+                  30ns a=229 b=119 sel=0 y=229
+                  35ns a=143 b=242 sel=0 y=143
+                  40ns a=232 b=197 sel=0 y=232
+                  45ns a=189 b=45 sel=1 y=45
+$stop called at time : 55 ns : File "C:/Users/dell/Desktop/workFolder/hlsUsingPython/hls_phase1/fpgaDesigns/combinationalCircuits/mux2x1Vectored/mux2x1Vectored.srcs/sim_1/new/tb_mux2x1Vectored.v" Line 22

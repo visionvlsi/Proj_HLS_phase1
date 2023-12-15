@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+                   0ns a=1 b=0 sel=0 y=1
+                   5ns a=0 b=0 sel=1 y=0
+                  15ns a=0 b=1 sel=1 y=1
+                  20ns a=1 b=0 sel=1 y=0
+                  35ns a=0 b=1 sel=0 y=0
+                  40ns a=0 b=0 sel=1 y=0
+                  45ns a=1 b=0 sel=1 y=0
+$stop called at time : 55 ns : File "C:/Users/dell/Desktop/workFolder/hlsUsingPython/hls_phase1/fpgaDesigns/combinationalCircuits/mux2x1Scalared/mux2x1Scalared.srcs/sim_1/new/tb_mux2x1Scalared.v" Line 19
