@@ -19,7 +19,7 @@ def ha(a,b,sum,co):
             sum.next=0
             co.next=1
         else:
-            sum.next=0
-            co.next=1
+            sum.next=1
+            co.next=0
 
     return comb

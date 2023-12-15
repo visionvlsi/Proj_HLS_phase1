@@ -14,6 +14,9 @@ def ha(a,b,sum,co):
       if a == 1 and b == 1:
         sum.next=0
         co.next=1
+      elif a==0 and b == 0:
+        sum.next=0
+        co.next=0
       else:
         sum.next=1
         co.next=0

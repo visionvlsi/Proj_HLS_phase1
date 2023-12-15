@@ -1,4 +1,4 @@
-module tb_mux2x1_scalar;
+module tb_mux2x1Scalared;
 
 wire y;
 reg a;
@@ -16,7 +16,7 @@ initial begin
     );
 end
 
-mux2x1_scalar dut(
+mux2x1Scalared dut(
     y,
     a,
     b,

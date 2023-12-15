@@ -1,4 +1,4 @@
-module tb_ShiftRegister;
+module tb_RightShiftRegister;
 
 reg clk;
 reg rst;
@@ -18,7 +18,7 @@ initial begin
     );
 end
 
-ShiftRegister dut(
+RightShiftRegister dut(
     clk,
     rst,
     data_in,

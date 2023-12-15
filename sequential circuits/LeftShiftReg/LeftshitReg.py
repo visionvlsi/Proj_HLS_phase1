@@ -1,7 +1,7 @@
 from myhdl import *
 
 @block
-def ShiftRegister(clk, rst, data_in, shift_enable, data_out):
+def LeftShiftRegister(clk, rst, data_in, shift_enable, data_out):
     """4-bit shift register with 1-bit left shift."""
 
     reg1 = Signal(intbv(0)[4:])  # 4-bit register
@@ -22,7 +22,7 @@ def ShiftRegister(clk, rst, data_in, shift_enable, data_out):
 def convert():
     clk ,data_in,data_out, shift_enable= [Signal(bool(0)) for i in range(4)]
     rst = ResetSignal(val=0, active=0, isasync=False)
-    convInst = ShiftRegister(clk, rst, data_in, shift_enable, data_out)
+    convInst = LeftShiftRegister(clk, rst, data_in, shift_enable, data_out)
     convInst.convert(hdl='Verilog')
 
 convert()

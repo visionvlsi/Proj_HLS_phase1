@@ -1,7 +1,7 @@
 from myhdl import *
 
 @block
-def mux2x1_vectored(y, a, b, sel):
+def mux2x1Vectored(y, a, b, sel):
 
     """ 
     Multiplexer 2x1
@@ -23,7 +23,7 @@ def mux2x1_vectored(y, a, b, sel):
 def convert():
     sel = Signal(bool(0))
     a,b,y= [Signal(intbv(0)[8:]) for i in range(3)]
-    convInst = mux2x1_vectored(y, a, b, sel)
+    convInst = mux2x1Vectored(y, a, b, sel)
     convInst.convert(hdl='Verilog')
 
 convert()

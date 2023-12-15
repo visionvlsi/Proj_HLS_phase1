@@ -1,7 +1,7 @@
-from myhdl import block, always_comb, Signal
+from myhdl import *
 
 @block
-def mux2x1_scalar(y, a, b, sel):
+def mux2x1Scalared(y, a, b, sel):
 
     """ 
     Multiplexer
@@ -23,7 +23,7 @@ def mux2x1_scalar(y, a, b, sel):
 
 def convert():
     y,a,b,sel = [Signal(bool(0)) for i in range(4)]
-    convInst = mux2x1_scalar(y, a, b, sel)
+    convInst = mux2x1Scalared(y, a, b, sel)
     convInst.convert(hdl='Verilog')
 
 convert()
