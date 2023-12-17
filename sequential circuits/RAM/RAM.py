@@ -25,4 +25,4 @@ clk = Signal(bool(0))
 	
 inst = RAM(clk=clk, addr=addr, we=we, din=din, dout=dout)
 #inst.convert(hdl="VHDL")
-inst.convert(hdl="Verilog", testbench=False)
+inst.convert(hdl="Verilog", testbench=True)

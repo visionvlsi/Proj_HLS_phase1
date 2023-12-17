@@ -71,10 +71,21 @@ def aluSeq(q, o, z, n, a, b, f, clk, rst, width=16):
         else:
             z.next = 0
 
-        n.next = 0
+        # Negative flag (n)
+        n.next = result[width - 1]
 
-        # how to detect overflow?
-        o.next = 0
+        # Overflow flag (o)
+        # For overflow detection, we check if the addition of two positive numbers
+        # results in a negative number or if the addition of two negative numbers
+        # results in a positive number.
+        if (f == t_ALU_FUNCTION.A_PLUS_B) or (f == t_ALU_FUNCTION.A_PLUS_1) or (f == t_ALU_FUNCTION.B_PLUS_1):
+        # Overflow occurs if the sign of a and b is the same, but the sign of the result is different.
+            if (a[width - 1] == b[width - 1]) and (result[width - 1] != a[width - 1]):
+                o.next = 1
+            else:
+                o.next = 0
+        else:
+            o.next = 0
 
     return instances()
 
