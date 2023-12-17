@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+                   0ns a=0 , b=0 , sum=0 , co=0
+                   5ns a=0 , b=1 , sum=1 , co=0
+                  10ns a=1 , b=0 , sum=1 , co=0
+                  15ns a=1 , b=1 , sum=0 , co=1

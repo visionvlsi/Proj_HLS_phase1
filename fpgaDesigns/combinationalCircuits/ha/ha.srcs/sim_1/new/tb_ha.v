@@ -1,26 +1,20 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 12/16/2023 04:30:29 AM
-// Design Name: 
-// Module Name: tb_ha
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
+module tb_ha( );
+
+reg a,b;
+wire sum,co;
+
+integer i;
+ha dut(a,b,sum,co);
+
+initial begin
+$monitor($time, "ns a=%b , b=%b , sum=%b , co=%b",a,b,sum,co);
+for(i=0; i<4; i=i+1) begin
+{a,b}=i;
+#5;
+end
 
 
-module tb_ha(
-
-    );
+end
 endmodule
