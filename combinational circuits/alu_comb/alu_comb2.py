@@ -18,7 +18,7 @@ t_ALU_FUNCTION = enum(
     "A_XOR_B",
     )
 @block
-def ALU_combi(q, o, z, n, a, b, f, width=16):
+def ALU_combi2(q, o, z, n, a, b, f, width=16):
     """
     Simple ALU.
     See ARM System Aerchitecture "Introduction To Processor Design"
@@ -68,12 +68,24 @@ def ALU_combi(q, o, z, n, a, b, f, width=16):
         else:
             z.next = 0
 
-        n.next = 0
+        # Negative flag (n)
+        n.next = result[width - 1]
 
-        # how to detect overflow?
-        o.next = 0
+        # Overflow flag (o)
+        # For overflow detection, we check if the addition of two positive numbers
+        # results in a negative number or if the addition of two negative numbers
+        # results in a positive number.
+        if (f == t_ALU_FUNCTION.A_PLUS_B) or (f == t_ALU_FUNCTION.A_PLUS_1) or (f == t_ALU_FUNCTION.B_PLUS_1):
+        # Overflow occurs if the sign of a and b is the same, but the sign of the result is different.
+            if (a[width - 1] == b[width - 1]) and (result[width - 1] != a[width - 1]):
+                o.next = 1
+            else:
+                o.next = 0
+        else:
+            o.next = 0
 
     return instances()
+
 
 
 def convert():
@@ -84,6 +96,6 @@ def convert():
     a = Signal(intbv(0)[16:])
     b = Signal(intbv(0)[16:])
     f = Signal(t_ALU_FUNCTION.ZERO)
-    convInst = ALU_combi(q, o, z, n, a, b, f, width=16)
+    convInst = ALU_combi2(q, o, z, n, a, b, f, width=16)
     convInst.convert(hdl='Verilog')
 convert()
