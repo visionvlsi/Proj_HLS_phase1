@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dell/Desktop/workFolder/hlsUsingPython/hls_phase1/fpgaDesigns/sequentialCircuits/aluseq/aluseq.srcs/sources_1/imports/alu/aluSeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluSeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dell/Desktop/workFolder/hlsUsingPython/hls_phase1/fpgaDesigns/sequentialCircuits/aluseq/aluseq.srcs/sim_1/imports/alu/tb_aluSeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aluSeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dell/Desktop/workFolder/hlsUsingPython/hls_phase1/fpgaDesigns/sequentialCircuits/aluseq/aluseq.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

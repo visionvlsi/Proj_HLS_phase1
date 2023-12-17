@@ -1,0 +1,17 @@
+Time resolution is 1 ps
+                  18 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0000(0)-- Output q=0000000000000000(0)-- Flag-bits: Overflow o=0, Zero z=1, Negative n=0
+                  28 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0001(1)-- Output q=1111111111111111(65535)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                  38 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0010(2)-- Output q=0000000001011000(88)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=0
+                  48 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0011(3)-- Output q=1111111110101000(65448)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                  58 ns Inputs a=1001110001000000(40000) , b=1111110111101000(65000)-- Opcode f=0100(4)-- Output q=1001110001000001(40001)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                  68 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0101(5)-- Output q=0000000000101100(44)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=0
+                  78 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=0110(6)-- Output q=1111111111010100(65492)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                  88 ns Inputs a=1001110001000000(40000) , b=1111110111101000(65000)-- Opcode f=0111(7)-- Output q=1111110111101001(65001)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                  98 ns Inputs a=1001110001000000(40000) , b=1111110111101000(65000)-- Opcode f=1000(8)-- Output q=1001101000101000(39464)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                 108 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1001(9)-- Output q=1111111110100111(65447)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                 118 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1010(10)-- Output q=1111111111010011(65491)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=1
+                 128 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1011(11)-- Output q=0000000000001000(8)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=0
+                 138 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1100(12)-- Output q=0000000001111100(124)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=0
+                 148 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1101(13)-- Output q=0000000001110100(116)-- Flag-bits: Overflow o=0, Zero z=0, Negative n=0
+                 158 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1110(14)-- Output q=0000000000000000(0)-- Flag-bits: Overflow o=0, Zero z=1, Negative n=0
+                 168 ns Inputs a=0000000001011000(88) , b=0000000000101100(44)-- Opcode f=1111(15)-- Output q=0000000000000000(0)-- Flag-bits: Overflow o=0, Zero z=1, Negative n=0

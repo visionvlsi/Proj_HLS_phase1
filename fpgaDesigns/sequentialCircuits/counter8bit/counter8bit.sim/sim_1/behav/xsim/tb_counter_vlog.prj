@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../counter8bit.srcs/sources_1/imports/counter_example/counter.v" \
+"../../../../counter8bit.srcs/sim_1/imports/counter_example/tb_counter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
